@@ -28,9 +28,15 @@ func checkIfDivisibleOnThree() {
 
 func fibo() {
 	// последовательность фебоначи
-	for i, j := 0, 1; j < 100; i, j = i+j, i {
-		if i < 100 {
-			fmt.Println(i)
-		}
+	count := 0
+	for i, j := 0, 1; count < 100; i, j = i+j, i {
+		fmt.Println(i)
+		count++
 	}
+}
+
+func main() {
+	checkIfEven()
+	checkIfDivisibleOnThree()
+	fibo()
 }
